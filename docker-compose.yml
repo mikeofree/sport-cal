@@ -7,4 +7,4 @@ services:
       - /home/sport-cal:/app
     ports:
       - "5001:5000"
-    command: bash -c "pip install flask icalendar requests && python sports_ics.py"
+    command: bash -c "pip install -r requirements.txt && python sports_ics.py"
