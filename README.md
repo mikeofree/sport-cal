@@ -11,6 +11,7 @@ This project provides a small Flask-based service that generates `.ics` calendar
 - Docker-ready using a single `docker-compose.yml`
 - In-memory caching to reduce external API calls
 - Straightforward endpoint structure for integration
+<img width="874" height="704" alt="image" src="https://github.com/user-attachments/assets/ce3ba27f-fd84-4b48-9e47-6361032fbb05" />
 
 ---
 
