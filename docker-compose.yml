@@ -1,0 +1,10 @@
+services:
+  sports-ics:
+    image: python:3.12
+    container_name: sports-ics
+    working_dir: /app
+    volumes:
+      - /home/sport-cal:/app
+    ports:
+      - "5001:5000"
+    command: bash -c "pip install flask icalendar requests && python sports_ics.py"
