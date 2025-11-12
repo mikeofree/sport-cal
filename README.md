@@ -2,8 +2,6 @@
 
 This project provides a small Flask-based service that generates `.ics` calendar feeds for sports schedules. It currently supports the NFL and NBA. The feeds can be used with Homepage (gethomepage.dev) or any calendar application that supports the iCal format.
 
-The intent of the project is to offer a simple, self-hosted method to maintain updated sports schedules without relying on external calendar hosting.
-
 ---
 
 ## Features
