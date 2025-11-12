@@ -48,7 +48,7 @@ View logs:
 docker logs -f sports-ics
 ```
 
-The container exposes port `5000`, mapped to `5001` on the host by default.
+The container exposes port `5000`, mapped to `5000` on the host by default.
 
 ---
 
@@ -63,7 +63,7 @@ services:
     volumes:
       - ./:/app
     ports:
-      - "5001:5000"
+      - "5000:5000"
     command: bash -c "pip install -r requirements.txt && python sports_ics.py"
 ```
 
@@ -81,8 +81,8 @@ services:
 Example:
 
 ```
-http://<host>:5001/nfl.ics
-http://<host>:5001/nba.ics
+http://<host>:5000/nfl.ics
+http://<host>:5000/nba.ics
 ```
 
 These URLs can be used with Homepage or any calendar application that supports `.ics`.
@@ -101,11 +101,11 @@ Example configuration for the Homepage `calendar` widget:
       timezone: America/Los_Angeles
       integrations:
         - type: ical
-          url: http://10.0.0.10:5001/nfl.ics
+          url: http://10.0.0.10:5000/nfl.ics
           name: NFL
           color: indigo
         - type: ical
-          url: http://10.0.0.10:5001/nba.ics
+          url: http://10.0.0.10:5000/nba.ics
           name: NBA
           color: fuchsia
 ```
