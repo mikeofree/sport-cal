@@ -32,7 +32,7 @@ sport-cal/
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-user>/sport-cal.git
+git clone https://github.com/mikeofree/sport-cal.git
 cd sport-cal
 ```
 
@@ -101,11 +101,11 @@ Example configuration for the Homepage `calendar` widget:
       timezone: America/Los_Angeles
       integrations:
         - type: ical
-          url: http://10.0.0.10:5000/nfl.ics
+          url: http://<host>:5000/nfl.ics
           name: NFL
           color: indigo
         - type: ical
-          url: http://10.0.0.10:5000/nba.ics
+          url: http://<host>:5000/nba.ics
           name: NBA
           color: fuchsia
 ```
