@@ -26,33 +26,6 @@ sport-cal/
 └── README.md
 ```
 
----
-
-## Installation and Deployment
-
-Clone the repository:
-
-```bash
-git clone https://github.com/mikeofree/sport-cal.git
-cd sport-cal
-```
-
-Start the container:
-
-```bash
-docker compose up -d
-```
-
-View logs:
-
-```bash
-docker logs -f sports-ics
-```
-
-The container exposes port `5000`, mapped to `5000` on the host by default.
-
----
-
 ## Docker Compose Example
 
 ```yaml
@@ -146,26 +119,6 @@ requests
 - The data is parsed and converted into iCalendar events using the `icalendar` library.
 - A simple in-memory cache reduces repeat external requests.
 - The resulting `.ics` file can then be imported into any compatible calendar application.
-
----
-
-## Roadmap
-
-Planned improvements:
-
-- Additional leagues (NHL, MLB)
-- Team-specific feeds (e.g., `/nfl/49ers.ics`)
-- Configurable cache refresh interval
-- Environment variable settings
-- Optional on-disk caching
-- Dockerfile and pre-built container publishing
-- GitHub Actions workflows for automated builds
-
-Future ideas:
-
-- NCAA schedules
-- Optional small web dashboard
-- JSON endpoints for raw schedule data
 
 ---
 
