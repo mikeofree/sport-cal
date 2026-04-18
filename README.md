@@ -86,11 +86,10 @@ Example configuration for the Homepage `calendar` widget:
           url: http://<host>:5000/mlb.ics
           name: MLB
           color: indigo
-        # Uncomment during NFL season (September - February):
-        # - type: ical
-        #   url: http://<host>:5000/nfl.ics
-        #   name: NFL
-        #   color: indigo
+        - type: ical
+          url: http://<host>:5000/nfl.ics
+          name: NFL
+          color: indigo
 ```
  
 ---
