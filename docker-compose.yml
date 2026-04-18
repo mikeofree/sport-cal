@@ -1,6 +1,6 @@
 services:
   sports-ics:
-    image: python:3.12
+    image: python:3.12-slim
     container_name: sports-ics
     working_dir: /app
     volumes:
